@@ -8,12 +8,19 @@
     <script type="text/javascript">
     function openApp() {
         window.location.href = "cmblife://go?url=Home";
+        // setTimeout(function() {
+        //     window.location.href = "http://xyk.cmbchina.com/Latte/";
+        //     // window.location.href = "https://itunes.apple.com/cn/app/zhao-shang-yin-xing-zhang/id398453262?mt=8"
+        // }, 1500);
+        // setTimeout(function() {
+        //     location.reload();
+        // }, 2000);
         setTimeout(function() {
-            window.location.href = "http://xyk.cmbchina.com/Latte/";
-            // window.location.href = "https://itunes.apple.com/cn/app/zhao-shang-yin-xing-zhang/id398453262?mt=8"
-        }, 1500);
-        setTimeout(function() {
-            location.reload();
+         if(confirm("请下载掌上生活app？")) {
+              location.href = "http://xyk.cmbchina.com/Latte/";
+            } else {
+               alert("如果取消，就写一个返回事件吧！");
+            }
         }, 2000);
     }
     </script>
